@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Título de la Página</title>
+	<link rel="stylesheet" href="styles.css"> <!-- Opcional: enlace a CSS -->
+</head>
+
+<body>
+	<header>
+		<h1>Libros</h1>
+	</header>
+	<a th:href="@{/crearCopiaJSON}">Crear copia seguridad JSON</a>
+	<main>
+		<section>
+			<h3>Formulario Libros</h3>
+			    <form th:action="@{/guardarLibro}" method="POST" th:object="${obj_libro}">
+			        <label for="id">ID:</label>
+			        <input type="number" id="id" th:field="*{id}" required><br><br>
+			        
+			        <label for="titulo">Título:</label>
+			        <input type="text" id="titulo" th:field="*{titulo}" required><br><br>
+			        
+			        <label for="autor">Autor:</label>
+			        <input type="text" id="autor" th:field="*{autor}" required><br><br>
+			        
+			        <label for="numero_paginas">Número de Páginas:</label>
+			        <input type="number" id="numero_paginas" th:field="*{numeroPaginas}" required><br><br>
+			        
+			        <input type="submit" value="Guardar libro">
+			    </form>
+		</section>
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Titulo</th>
+						<th>Páginas</th>
+						<th>Autor</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="libro : ${atr_lista_libros}">
+						<td th:text="${libro.id}"></td>
+						<td th:text="${libro.titulo}"></td>
+						<td th:text="${libro.numeroPaginas}"></td>
+						<td th:text="${libro.autor}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 Proyecto Libros</p>
+	</footer>
+</body>
+
+</html>

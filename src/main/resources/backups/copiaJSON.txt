@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "numeroPaginas": 417,
+    "autor": "Gabriel García Márquez"
+  },
+  {
+    "id": 2,
+    "titulo": "Don Quijote de la Mancha",
+    "numeroPaginas": 1023,
+    "autor": "Miguel de Cervantes"
+  },
+  {
+    "id": 3,
+    "titulo": "La sombra del viento",
+    "numeroPaginas": 576,
+    "autor": "Carlos Ruiz Zafón"
+  },
+  {
+    "id": 4,
+    "titulo": "El amor en los tiempos del cólera",
+    "numeroPaginas": 368,
+    "autor": "Gabriel García Márquez"
+  },
+  {
+    "id": 5,
+    "titulo": "Crónica de una muerte anunciada",
+    "numeroPaginas": 120,
+    "autor": "Gabriel García Márquez"
+  },
+  {
+    "id": 6,
+    "titulo": "1984",
+    "numeroPaginas": 328,
+    "autor": "George Orwell"
+  },
+  {
+    "id": 7,
+    "titulo": "Orgullo y prejuicio",
+    "numeroPaginas": 432,
+    "autor": "Jane Austen"
+  },
+  {
+    "id": 8,
+    "titulo": "El túnel",
+    "numeroPaginas": 256,
+    "autor": "Ernesto Sabato"
+  },
+  {
+    "id": 9,
+    "titulo": "La casa de los espíritus",
+    "numeroPaginas": 448,
+    "autor": "Isabel Allende"
+  },
+  {
+    "id": 10,
+    "titulo": "El principito",
+    "numeroPaginas": 96,
+    "autor": "Antoine de Saint-Exupéry"
+  },
+  {
+    "id": 11,
+    "titulo": "El Padrino",
+    "numeroPaginas": 516,
+    "autor": "Mario Puzzo"
+  }
+]
