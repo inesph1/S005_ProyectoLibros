@@ -64,5 +64,17 @@
     "titulo": "El Padrino",
     "numeroPaginas": 516,
     "autor": "Mario Puzzo"
+  },
+  {
+    "id": 12,
+    "titulo": "El nombre del viento",
+    "numeroPaginas": 600,
+    "autor": "Patrick Ruthfuss"
+  },
+  {
+    "id": 13,
+    "titulo": "Juego de Tronos",
+    "numeroPaginas": 800,
+    "autor": "G.R.R. Martin"
   }
 ]
