@@ -47,7 +47,7 @@ public class HomeControlador {
 	@RequestMapping("/crearCopiaJSON")
 	public String copiaJSON(HttpServletRequest request) {
 		List<Libro> listaLibros = libroRepo.findAll();
-		System.out.println("CONTEXTO "+request.getServletContext().getRealPath(""));
+		System.out.println("CONTEXTO "+request.getServletContext().getRealPath("/WEB-INF/classes/backups/"));
 		request.getServletContext().getRealPath("");
 
 		
@@ -61,14 +61,14 @@ public class HomeControlador {
 		
 		//CHAPUZA
 		if(currentRelativePath.toString().equals("C:\\Users\\html\\Desktop\\Spring 4.24.0\\WS_Spring24\\S005_ProyectoLibros")) {
-			ruta ="/src/main/resources/backups/copiaJSON.txt";
+			ruta = currentRelativePath + "/src/main/resources/backups/copiaJSON.txt";
 		}else {
 			//ruta = servletContext.getRealPath("/WEB-INF/resources/backups/copiaJSON.txt");
-		 ruta="WEB-INF/classes/backups";
+		 ruta= request.getServletContext().getRealPath("/WEB-INF/classes/backups/copiaJSON.txt");
 		}
 				
 		//File archivo = new File(currentRelativePath + "/src/main/resources/backups/copiaJSON.txt");
-		File archivo = new File(currentRelativePath + ruta);
+		File archivo = new File(ruta);
 		// crea la carpeta
 		archivo.getParentFile().mkdirs();
 
